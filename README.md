@@ -20,6 +20,14 @@ rm config/credentials.yml.enc
 EDITOR=nano rails credentials:edit
 ```
 
+When your editor opens, you can add any environment variables you require, or just save the file (for nano editor you can save and exit with `Ctrl+X`, `Y`, `Enter`).
+Then, commit your new credentials file:
+
+```
+git add config/credentials.yml.enc
+git commit -m "Add credentials file"
+```
+
 Next run the following commands to install the required gems and create the database:
 
 ```
